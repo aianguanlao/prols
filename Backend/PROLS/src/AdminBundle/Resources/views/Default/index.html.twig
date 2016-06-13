@@ -1,0 +1,50 @@
+<!--ADMIN HOME PAGE -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Page</title>
+	</head>
+	<body>
+		<h1>{{page}}</h1>
+		<a href="">Home</a>
+		<button id="time-in-button" data-id="{{ user.id }}"  
+			{% if timename == true %}
+				data-time="time-in">Time In
+			{% else %}
+				data-time="time-out">Time Out
+			{% endif %}
+		</button>
+		<a href="{{ path('profile_page') }}">View Profile</a>
+		{% if role == 'ADMIN' %}
+			<a href="">Manage Employees</a>
+		{% endif %}
+		<a href="{{ path('logout') }}">Logout</a>
+	</body>
+
+	<script type="text/javascript" src="{{asset ('js/jquery-3.0.0.min.js')}}"></script>
+	<script>
+	$('#time-in-button').click(function(){
+		
+		var id = $(this).data('id'), timename = $(this).data('time'), confirmText = 'Are you sure you want to ' + $(this).text();
+
+			$.get("{{ path('admin_time_in_no_params') }}" + id,  function(data){
+				console.log(data);
+				var confirmTime = confirm(confirmText);
+				if (confirmTime == true){
+					if(data[1] == 1){
+						console.log("Time Out")
+						$('#time-in-button').html("Time Out"); //to be changed when create row is working
+					} else if(data[1] == 2){
+						console.log("Time In")
+						$('#time-in-button').html("Time In"); //.......
+					} else{
+						console.log(data[2] + " " + data[1]+" "+data[0]);
+					}
+				}else{
+
+				}
+			}, "json");
+			return false;
+	});
+	</script>
+</html>

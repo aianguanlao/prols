@@ -1,0 +1,27 @@
+login_page:
+    resource: "@CoreBundle/Resources/config/routing.yml"
+    prefix: /
+
+sms:
+    resource: "@SmsBundle/Resources/config/routing.yml"
+    prefix:   /sms
+
+admin:
+    resource: "@AdminBundle/Resources/config/routing.yml"
+    prefix:   /main
+
+core:
+    resource: "@CoreBundle/Resources/config/routing.yml"
+    
+_security_check:
+    pattern: /login_check
+
+logout:
+   pattern: /logout
+
+error403:
+    pattern: /403
+    
+profile_page:
+    path: /profile
+    defaults: { _controller: AdminBundle:Default:profile }
