@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- META SECTION -->
+
+    <title>Propelrr Online Login System</title>            
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="propelrrfavicon.png" type="image/x-icon" />
+
+    <!-- END META SECTION -->
+
+    <!-- CSS INCLUDE -->
+
+    <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>
+    <link rel="stylesheet" type="text/css" id="theme" href="css/style.css"/>
+
+    <!-- EOF CSS INCLUDE -->
+
+</head>
+<body>
+
+    <!-- START PAGE CONTAINER -->
+
+    <div class="page-container">
+
+        <!-- START PAGE SIDEBAR -->
+
+        <div class="page-sidebar">
+
+            <!-- START X-NAVIGATION -->
+
+            <ul class="x-navigation">
+                <li class="xn-logo">
+                    <a href="index.html">PROPELRR</a>
+                    <a href="#" class="x-navigation-control"></a>
+                </li>
+                <li class="xn-profile">
+                    <a href="#" class="profile-mini">
+                        <img src="assets/images/users/no-image.jpg" alt=""/>
+                    </a>
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="assets/images/users/no-image.jpg" alt=""/>
+                        </div>
+                        <div class="profile-data">
+                            <div class="profile-data-name">Lorem Ipsum</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="xn-title">User Navigation</li>
+                <li>
+                    <a href="index.html"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>                        
+                </li>
+                <li>
+                    <a href="index.html" class="mb-control btn-time"><span class="fa fa-clock-o"></span> <span class="xn-text">Time In</span></a>
+                </li>
+                <li>
+                    <a href="page-profile.html"><span class="fa fa-user"></span> <span class="xn-text">View Profile</span></a>                        
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-tasks"></span> <span class="xn-text">Notifications</span></a>
+                    <div class="informer informer-warning">3</div>
+                    <div class="notification-wrap panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><span class="fa fa-tasks"></span> Notifications</h3>                                
+                            <div class="pull-right">
+                                <span class="label label-warning">3 active</span>
+                            </div>
+                        </div>
+                        <div class="panel-body list-group scroll" style="height: 200px;">                                
+                            <a class="list-group-item" href="#">
+                                <strong>Phasellus augue arcu, elementum</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
+                                </div>
+                                <small class="text-muted">John Doe, 25 Sep 2014 / 50%</small>
+                            </a>
+                            <a class="list-group-item" href="#">
+                                <strong>Aenean ac cursus</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+                                </div>
+                                <small class="text-muted">Dmitry Ivaniuk, 24 Sep 2014 / 80%</small>
+                            </a>
+                            <a class="list-group-item" href="#">
+                                <strong>Lorem ipsum dolor</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">95%</div>
+                                </div>
+                                <small class="text-muted">John Doe, 23 Sep 2014 / 95%</small>
+                            </a>
+                            <a class="list-group-item" href="#">
+                                <strong>Cras suscipit ac quam at tincidunt.</strong>
+                                <div class="progress progress-small">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
+                                </div>
+                                <small class="text-muted">John Doe, 21 Sep 2014 /</small><small class="text-success"> Done</small>
+                            </a>                                
+                        </div>     
+                        <div class="panel-footer text-center">
+                            <a href="#.html">Show all tasks</a>
+                        </div>                            
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span><span class="xn-text">Logout</span></a>                        
+                </li>
+                <li class="xn-title">Admin Navigation</li>
+                <li>
+                    <a href="view-req-vl.html"><span class="fa fa-book"></span> <span class="xn-text">View Leave Requests</span></a>
+                </li>
+                <li class="active">
+                    <a href="manage-emp.html"><span class="fa fa-users"></span> <span class="xn-text">Manage Employees</span></a>                        
+                </li>                  
+                <div class="widget widget-danger widget-padding-sm" id="clock">
+                    <div class="widget-big-int plugin-clock">00:00</div>                            
+                    <div class="widget-subtitle plugin-date">Loading...</div>
+                </div>
+            </ul>
+
+            <!-- END X-NAVIGATION -->
+
+        </div>
+
+        <!-- END PAGE SIDEBAR -->
+
+        <!-- PAGE CONTENT -->
+
+        <div class="page-content">
+
+            <!-- START BREADCRUMB -->
+
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>                    
+                <li class="active">Manage Employees</li>
+            </ul>
+
+            <!-- END BREADCRUMB -->
+
+            <!-- PAGE CONTENT WRAPPER -->
+
+            <div class="page-content-wrap">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <!-- START DATATABLE EXPORT -->
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Manage Employees</h3>
+                                <div class="row">
+                                    <div class="col-md-3 pull-right">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search here...">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-primary">Search</button>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Employee Number</th>
+                                            <th>Name</th>
+                                            <th>Department</th>
+                                            <th>Position</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>0000-0001</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>Developer Department</td>
+                                            <td>Senior Web Software Developer</td>
+                                            <td>Regular</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0000-0002</td>
+                                            <td>Lael Greer</td>
+                                            <td>Creatives Department</td>
+                                            <td>Graphic Designer</td>
+                                            <td>Contractual</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0000-0003</td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer Department</td>
+                                            <td>Front-end Developer</td>
+                                            <td>Contractual</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0000-0004</td>
+                                            <td>Shad Decker</td>
+                                            <td>SEO Department</td>
+                                            <td>Senior SEO Specialist</td>
+                                            <td>Separated</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0000-0005</td>
+                                            <td>Michael Bruce</td>
+                                            <td>Developer Department</td>
+                                            <td>Javascript Developer</td>
+                                            <td>Regular</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0000-0006</td>
+                                            <td>Donna Snider</td>
+                                            <td>Developer Department</td>
+                                            <td>Back-end Developer</td>
+                                            <td>Provisional</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="page-profile.html">0000-0007</a></td>
+                                            <td><a href="page-profile.html">Lorem Ipsum</a></td>
+                                            <td><a href="page-profile.html">Developer Department</a></td>
+                                            <td><a href="page-profile.html">Quality Assurance Analyst</a></td>
+                                            <td><a href="page-profile.html">Provisional</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- END DATATABLE EXPORT -->
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- END PAGE CONTENT WRAPPER -->
+
+        </div>            
+
+        <!-- END PAGE CONTENT -->
+
+    </div>
+
+    <!-- END PAGE CONTAINER -->
+
+    <!-- MESSAGE BOX-->
+
+    <div class="message-box animated fadeIn" data-sound="fail" id="mb-signout">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-sign-out"></span> Log <strong>Out</strong> ?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to log out?</p>
+                    <p>Press No if you want to continue work. Press Yes to logout current user.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href="pages-login.html" class="btn btn-success btn-lg">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="message-box animated fadeIn" data-sound="alert" id="mb-timein">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-clock-o"></span> Time <strong>In</strong> ?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to time in?</p>
+                    <p>Press No if you want to continue work. Press Yes to time in current user.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href="index.html" class="btn btn-success btn-lg btn-confirm-timein">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="message-box animated fadeIn" data-sound="alert" id="mb-timeout">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-clock-o"></span> Time <strong>Out</strong> ?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to time out?</p>
+                    <p>Press No if you want to continue work. Press Yes to time out current user.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href="index.html" class="btn btn-success btn-lg btn-confirm-timeout">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-success alert-message-timeout" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <center><strong>Well done!</strong> Time Out Successfu!</center>
+    </div>
+    <div class="alert alert-success alert-message-timein" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <center><strong>Well done!</strong> Time In Successful!</center>
+    </div>
+
+    <!-- END MESSAGE BOX-->
+
+    <!-- START PRELOADS -->
+
+    <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
+    <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
+
+    <!-- END PRELOADS -->
+
+    <!-- START SCRIPTS -->
+
+    <!-- START PLUGINS -->
+
+    <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>   
+
+    <!-- END PLUGINS -->
+
+    <!-- START THIS PAGE PLUGINS--> 
+
+    <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>        
+    <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+    <script type="text/javascript" src="js/plugins/scrolltotop/scrolltopcontrol.js"></script>
+    <script type='text/javascript' src='js/plugins/bootstrap/bootstrap-datepicker.js'></script>                
+    <script type="text/javascript" src="js/plugins/owl/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/plugins/moment.min.js"></script>
+    <script type="text/javascript" src="js/plugins/daterangepicker/daterangepicker.js"></script>
+
+    <!-- END THIS PAGE PLUGINS-->
+
+    <!-- START TEMPLATE -->
+
+    <script type="text/javascript" src="js/plugins.js"></script>        
+    <script type="text/javascript" src="js/actions.js"></script>
+    <script type="text/javascript" src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/marcus-script.js"></script>
+
+    <!-- END TEMPLATE -->
+
+    <!-- END SCRIPTS -->  
+
+</body>
+</html>
