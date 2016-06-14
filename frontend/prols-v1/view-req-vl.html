@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- META SECTION -->
+
+    <title>Propelrr Online Login System</title>            
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="propelrrfavicon.png" type="image/x-icon" />
+
+    <!-- END META SECTION -->
+
+    <!-- CSS INCLUDE -->
+
+    <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>
+    <link rel="stylesheet" type="text/css" id="theme" href="css/style.css"/>
+
+    <!-- EOF CSS INCLUDE -->
+
+</head>
+<body>
+
+    <!-- START PAGE CONTAINER -->
+
+    <div class="page-container">
+
+        <!-- START PAGE SIDEBAR -->
+
+        <div class="page-sidebar">
+
+            <!-- START X-NAVIGATION -->
+
+            <ul class="x-navigation">
+                <li class="xn-logo">
+                    <a href="index.html">PROPELRR</a>
+                    <a href="#" class="x-navigation-control"></a>
+                </li>
+                <li class="xn-profile">
+                    <a href="#" class="profile-mini">
+                        <img src="assets/images/users/no-image.jpg" alt=""/>
+                    </a>
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="assets/images/users/no-image.jpg" alt=""/>
+                        </div>
+                        <div class="profile-data">
+                            <div class="profile-data-name">Lorem Ipsum</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="xn-title">User Navigation</li>
+                <li>
+                    <a href="index.html"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>                        
+                </li>
+                <li>
+                    <a href="index.html" class="mb-control btn-time"><span class="fa fa-clock-o"></span> <span class="xn-text">Time In</span></a>
+                </li>
+                <li>
+                    <a href="page-profile.html"><span class="fa fa-user"></span> <span class="xn-text">View Profile</span></a>                        
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-tasks"></span> <span class="xn-text">Notifications</span></a>
+                    <div class="informer informer-warning">3</div>
+                    <div class="notification-wrap panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><span class="fa fa-tasks"></span> Notifications</h3>                                
+                            <div class="pull-right">
+                                <span class="label label-warning">3 active</span>
+                            </div>
+                        </div>
+                        <div class="panel-body list-group scroll" style="height: 200px;">                                
+                            <a class="list-group-item" href="#">
+                                <strong>Phasellus augue arcu, elementum</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
+                                </div>
+                                <small class="text-muted">John Doe, 25 Sep 2014 / 50%</small>
+                            </a>
+                            <a class="list-group-item" href="#">
+                                <strong>Aenean ac cursus</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+                                </div>
+                                <small class="text-muted">Dmitry Ivaniuk, 24 Sep 2014 / 80%</small>
+                            </a>
+                            <a class="list-group-item" href="#">
+                                <strong>Lorem ipsum dolor</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">95%</div>
+                                </div>
+                                <small class="text-muted">John Doe, 23 Sep 2014 / 95%</small>
+                            </a>
+                            <a class="list-group-item" href="#">
+                                <strong>Cras suscipit ac quam at tincidunt.</strong>
+                                <div class="progress progress-small">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
+                                </div>
+                                <small class="text-muted">John Doe, 21 Sep 2014 /</small><small class="text-success"> Done</small>
+                            </a>                                
+                        </div>     
+                        <div class="panel-footer text-center">
+                            <a href="#.html">Show all tasks</a>
+                        </div>                            
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span><span class="xn-text">Logout</span></a>                        
+                </li>
+                <li class="xn-title">Admin Navigation</li>
+                <li class="active">
+                    <a href="view-req-vl.html"><span class="fa fa-book"></span> <span class="xn-text">View Leave Requests</span></a>                        
+                </li>
+                <li>
+                    <a href="manage-emp.html"><span class="fa fa-users"></span> <span class="xn-text">Manage Employees</span></a>                        
+                </li>
+                <div class="widget widget-danger widget-padding-sm" id="clock">
+                    <div class="widget-big-int plugin-clock">00:00</div>                            
+                    <div class="widget-subtitle plugin-date">Loading...</div>
+                </div>
+            </ul>
+
+            <!-- END X-NAVIGATION -->
+
+        </div>
+
+        <!-- END PAGE SIDEBAR -->
+
+        <!-- PAGE CONTENT -->
+
+        <div class="page-content">
+
+            <!-- START BREADCRUMB -->
+
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>                    
+                <li class="active">View Leave Requests</li>
+            </ul>
+
+            <!-- END BREADCRUMB -->
+
+            <!-- PAGE CONTENT WRAPPER -->
+
+            <div class="page-content-wrap">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <!-- START DATATABLE EXPORT -->
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">View Leave Requests</h3>
+                            </div>
+                            <div class="panel-body panel-body-table">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped table-actions table-request-vl" >
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center" width="200">Employee Number</th>
+                                                <th class="text-center">Employee Name</th>
+                                                <th class="text-center" width="150">Status</th>
+                                                <th class="text-center" width="150">Category</th>
+                                                <th class="text-center" width="150">Start Date</th>
+                                                <th class="text-center" width="150">End Date</th>
+                                                <th class="text-center" width="200">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>                                            
+                                            <tr id="trow_1">
+                                                <a href="#">
+                                                    <td class="text-center" data-toggle="modal" data-target="#modal-reason">0000-0001</td>
+                                                    <td data-toggle="modal" data-target="#modal-reason"><strong>Tiger Nixon</strong></td>
+                                                    <td class="text-center" data-toggle="modal" data-target="#modal-reason">Pending</td>
+                                                    <td class="text-center" data-toggle="modal" data-target="#modal-reason">Vacation Leave</td>
+                                                    <td class="text-center" data-toggle="modal" data-target="#modal-reason">24/09/2014</td>
+                                                    <td class="text-center" data-toggle="modal" data-target="#modal-reason">26/09/2014</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="mb-control" data-box="#mb-accept"><span class="xn-text"><button type="button" class="btn btn-success">Accept</button></span></a>
+                                                        <a href="#" class="mb-control" data-box="#mb-reject"><span class="xn-text"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-sure">Reject</button></a>
+                                                    </td>
+                                                </a>
+                                            </tr>
+                                            <tr id="trow_2">
+                                                <td class="text-center" data-toggle="modal" data-target="#modal-reason">0000-0004</td>
+                                                <td data-toggle="modal" data-target="#modal-reason"><strong>Shad Decker</strong></td>
+                                                <td class="text-center" data-toggle="modal" data-target="#modal-reason">Pending</td>
+                                                <td class="text-center" data-toggle="modal" data-target="#modal-reason">Sick Leave</td>
+                                                <td class="text-center" data-toggle="modal" data-target="#modal-reason">19/09/2014</td>
+                                                <td class="text-center" data-toggle="modal" data-target="#modal-reason">22/09/2014</td>
+                                                <td class="text-center">
+                                                    <a href="#" class="mb-control" data-box="#mb-accept"><span class="xn-text"><button type="button" class="btn btn-success">Accept</button></span></a>
+                                                    <a href="#" class="mb-control" data-box="#mb-reject"><span class="xn-text"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-sure">Reject</button></a>
+                                                </td>
+                                            </tr>
+                                            <tr id="trow_3">
+                                                <td class="text-center" data-toggle="modal" data-target="#modal-reason">0000-0007</td>
+                                                <td data-toggle="modal" data-target="#modal-reason"><span class=""><strong>Lorem Ipsum</strong></span></a></td>
+                                                <td class="text-center" data-toggle="modal" data-target="#modal-reason">Pending</td>
+                                                <td class="text-center" data-toggle="modal" data-target="#modal-reason">Vacation Leave</td>
+                                                <td class="text-center" data-toggle="modal" data-target="#modal-reason">20/09/2014</td>
+                                                <td class="text-center" data-toggle="modal" data-target="#modal-reason">21/09/2014</td>
+                                                <td class="text-center">
+                                                    <a href="#" class="mb-control" data-box="#mb-accept"><span class="xn-text"><button type="button" class="btn btn-success">Accept</button></span></a>
+                                                    <a href="#" class="mb-control" data-box="#mb-reject"><span class="xn-text"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-sure">Reject</button></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END DATATABLE EXPORT -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT WRAPPER -->
+
+</div>            
+
+<!-- END PAGE CONTENT -->
+
+</div>
+
+<!-- END PAGE CONTAINER -->
+
+<!-- START MODAL -->
+
+<div class="modal fade" id="modal-reason" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Reason for VL</h4>
+            </div>
+            <div class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum neque vel egestas auctor. Donec euismod risus sit amet odio vehicula, et convallis tortor iaculis. Fusce eget quam quam. Quisque ut purus quis purus venenatis pellentesque. Maecenas eros est, gravida sed faucibus ac, elementum in leo. Phasellus purus neque, semper volutpat sodales eget, lacinia vitae quam. Integer lacinia ut lectus ut feugiat. Nulla nec sapien nisl. Praesent sed aliquet augue. Aenean sit amet risus id arcu dapibus posuere. Maecenas in tortor et mi iaculis molestie sit amet nec nunc. Nullam et convallis metus, at auctor justo. Nam sodales felis tincidunt urna sodales, et tincidunt lorem interdum. Suspendisse vel ultrices ex, ac eleifend ligula. Morbi non ullamcorper nisl. Aenean volutpat at massa et tempus.
+                <br><br>
+                Duis commodo magna at mauris bibendum sagittis vel vitae mi. Donec aliquet consectetur urna eget dapibus. Etiam aliquam eleifend ex, nec dapibus odio dapibus non. Curabitur cursus tortor tincidunt nulla ornare cursus. Etiam turpis enim, rhoncus quis ultricies vitae, placerat ut tortor. Nulla nulla mauris, euismod id felis sed, egestas maximus turpis. Quisque tristique euismod neque, sed volutpat enim interdum sed.
+                <br><br>
+                Etiam eu consequat velit, et vestibulum eros. Nulla convallis pretium ipsum, quis ullamcorper ipsum dictum sit amet. Cras nec augue at tellus porttitor scelerisque a quis risus. Nunc laoreet ligula vitae mauris luctus, nec dignissim dolor semper. Suspendisse at neque in lacus eleifend eleifend. Curabitur vulputate vehicula purus laoreet pretium. Fusce ut tortor varius libero varius placerat. Maecenas a massa in ex tristique commodo eget varius turpis. Nulla rhoncus finibus urna, quis lobortis ante rhoncus vitae.
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-sure" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Reason for VL</h4>
+            </div>
+            <center><h2>Are You Sure?</h2></center>
+            <center><button type="button" class="btn btn-success">Yes</button>
+                <button type="button" class="btn btn-danger">No</button></center>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END MODAL -->
+
+    <!-- MESSAGE BOX-->
+
+    <!-- LOG OUT-->
+
+    <div class="message-box animated fadeIn" data-sound="fail" id="mb-signout">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-sign-out"></span> Log <strong>Out</strong> ?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to log out?</p>
+                    <p>Press No if you want to continue work. Press Yes to logout current user.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href="pages-login.html" class="btn btn-success btn-lg">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END LOG OUT-->
+
+    <!-- ACCEPT REQUEST -->
+
+    <div class="message-box animated fadeIn" id="mb-accept">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-check-circle-o"></span> <strong>Accept</strong> Request?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to accept this request?</p>
+                    <p>Press No if you want to continue work. Press Yes to accept the request of current employee.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href="view-req-vl.html" class="btn btn-success btn-lg btn-confirm-accept">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END ACCEPT REQUEST -->
+
+    <!-- REJECT REQUEST -->
+
+    <div class="message-box animated fadeIn" id="mb-reject">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-times-circle-o"></span> <strong>Reject</strong> Request?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to reject this request?</p>
+                    <p>Press No if you want to continue work. Press Yes to reject the request of current employee.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href="view-req-vl.html" class="btn btn-success btn-lg btn-confirm-reject">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END REJECT REQUEST -->
+
+    <!-- TIME IN -->
+
+    <div class="message-box animated fadeIn" data-sound="alert" id="mb-timein">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-clock-o"></span> Time <strong>In</strong> ?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to time in?</p>
+                    <p>Press No if you want to continue work. Press Yes to time in current user.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href="index.html" class="btn btn-success btn-lg btn-confirm-timein">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END TIME IN -->
+
+    <!-- TIME OUT -->
+
+    <div class="message-box animated fadeIn" data-sound="alert" id="mb-timeout">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-clock-o"></span> Time <strong>Out</strong> ?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to time out?</p>
+                    <p>Press No if you want to continue work. Press Yes to time out current user.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href="index.html" class="btn btn-success btn-lg btn-confirm-timeout">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END TIME OUT -->
+
+    <div class="alert alert-success alert-message-timeout" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <center><strong>Well done!</strong> Time Out Successfu!</center>
+    </div>
+    <div class="alert alert-success alert-message-timein" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <center><strong>Well done!</strong> Time In Successful!</center>
+    </div>
+    <div class="alert alert-success alert-message-accept" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <center><strong>Well done!</strong> Accept Request Successful!</center>
+    </div>
+    <div class="alert alert-success alert-message-reject" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <center><strong>Well done!</strong> Reject Request Successful!</center>
+    </div>
+
+<!-- END MESSAGE BOX-->
+
+<!-- START PRELOADS -->
+
+<audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
+<audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
+<!-- END PRELOADS -->                  
+<!-- START SCRIPTS -->
+<!-- START PLUGINS -->
+<script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>        
+
+<!-- END PLUGINS -->
+
+<!-- START THIS PAGE PLUGINS-->  
+
+<script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>        
+<script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+<script type="text/javascript" src="js/plugins/scrolltotop/scrolltopcontrol.js"></script>
+<script type="text/javascript" src="js/plugins.js"></script>        
+<script type="text/javascript" src="js/actions.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<!-- END TEMPLATE -->
+
+<!-- END SCRIPTS --> 
+
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- META SECTION -->
+
+    <title>Propelrr Online Login System</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="propelrrfavicon.png" type="image/x-icon" />
+
+    <!-- END META SECTION -->
+
+    <!-- CSS INCLUDE -->
+
+    <link rel="stylesheet" type="text/css" id="theme" href="css/theme.css"/>
+    <link rel="stylesheet" type="text/css" id="theme" href="css/style.css"/>
+
+    <!-- END CSS INCLUDE -->
+
+</head>
+<body>
+
+    <!-- START PAGE CONTAINER -->
+
+    <div class="page-container">
+
+        <!-- START PAGE SIDEBAR -->
+
+        <div class="page-sidebar">
+
+            <!-- START X-NAVIGATION -->
+
+            <ul class="x-navigation">
+                <li class="xn-logo">
+                    <a href="index.html">PROPELRR</a>
+                    <a href="#" class="x-navigation-control"></a>
+                </li>
+                <li class="xn-profile">
+                    <a href="#" class="profile-mini">
+                        <img src="assets/images/users/no-image.jpg" alt=""/>
+                    </a>
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="assets/images/users/no-image.jpg" alt=""/>
+                        </div>
+                        <div class="profile-data">
+                            <div class="profile-data-name">Lorem Ipsum</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="xn-title">User Navigation</li>
+                <li class="active">
+                    <a href="index.html"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="index.html" class="mb-control btn-time"><span class="fa fa-clock-o"></span> <span class="xn-text">Time In</span></a>
+                </li>
+                <li>
+                    <a href="page-profile.html"><span class="fa fa-user"></span> <span class="xn-text">View Profile</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-tasks"></span> <span class="xn-text">Notifications</span></a>
+                        <div class="informer informer-warning">2</div>
+                        <div class="notification-wrap panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                             <div class="panel-heading">
+                            <h3 class="panel-title"><span class="fa fa-comments"></span> Messages</h3>                                
+                            <div class="pull-right">
+                                <span class="label label-danger">2 new</span>
+                            </div>
+                        </div>
+                        <div class="panel-body list-group list-group-contacts scroll" style="height: 200px;">
+                            <a href="#" class="list-group-item">
+                                
+                                <img src="assets/images/users/user3.jpg" class="pull-left" alt="John Doe"/>
+                                <span class="contacts-title"> Mitchelle Viray</span>
+                                <p>approved your requested leave.</p>
+                            </a>
+                            <a href="#" class="list-group-item">
+                               
+                                <img src="assets/images/users/user2.jpg" class="pull-left" alt="Dmitry Ivaniuk"/>
+                                <span class="contacts-title"> Dexter Loor</span>
+                                <p>alignment meeting at 1PM!</p>
+                            </a>
+                        </div>     
+                            <div class="panel-footer text-center">
+                                <a href="#.html">Show all notifications</a>
+                            </div>                            
+                        </div>
+                </li>
+                <li>
+                    <a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span><span class="xn-text">Logout</span></a>
+                </li>
+                <li class="xn-title">Admin Navigation</li>
+                <li>
+                    <a href="view-req-vl.html"><span class="fa fa-book"></span> <span class="xn-text">View Leave Requests</span></a>
+                </li>
+                <li>
+                    <a href="manage-emp.html"><span class="fa fa-users"></span> <span class="xn-text">Manage Employees</span></a>
+                </li>
+                <div class="widget widget-danger widget-padding-sm" id="clock">
+                    <div class="widget-big-int plugin-clock">00:00</div>
+                    <div class="widget-subtitle plugin-date">Loading...</div>
+                </div>
+            </ul>
+
+            <!-- END X-NAVIGATION -->
+
+        </div>
+
+        <!-- END PAGE SIDEBAR -->
+
+        <!-- PAGE CONTENT -->
+
+        <div class="page-content">
+
+            <!-- START BREADCRUMB -->
+
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Dashboard</li>
+            </ul>
+
+            <!-- END BREADCRUMB -->
+
+            <!-- PAGE CONTENT WRAPPER -->
+
+            <div class="content-frame-body padding-bottom-0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Calendar</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="alert_holder"></div>
+                                <div class="calendar">
+                                    <div id="calendar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- END PAGE CONTENT WRAPPER -->
+
+        </div>
+
+        <!-- END PAGE CONTENT -->
+
+    </div>
+
+    <!-- END PAGE CONTAINER -->
+
+    <!-- MESSAGE BOX-->
+
+    <div class="message-box animated fadeIn" data-sound="fail" id="mb-signout">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-sign-out"></span> Log <strong>Out</strong> ?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to log out?</p>
+                    <p>Press No if you want to continue work. Press Yes to logout current user.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href="pages-login.html" class="btn btn-success btn-lg">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="message-box animated fadeIn" data-sound="alert" id="mb-timein">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-clock-o"></span> Time <strong>In</strong> ?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to time in?</p>
+                    <p>Press No if you want to continue work. Press Yes to time in current user.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href="index.html" class="btn btn-success btn-lg btn-confirm-timein">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="message-box animated fadeIn" data-sound="alert" id="mb-timeout">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-clock-o"></span> Time <strong>Out</strong> ?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to time out?</p>
+                    <p>Press No if you want to continue work. Press Yes to time out current user.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href="index.html" class="btn btn-success btn-lg btn-confirm-timeout">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-success alert-message-timeout" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <center><strong>Well done!</strong> Time Out Successfu!</center>
+    </div>
+    <div class="alert alert-success alert-message-timein" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <center><strong>Well done!</strong> Time In Successful!</center>
+    </div>
+
+    <!-- END MESSAGE BOX-->
+
+    <!-- START MODAL -->
+
+    <div class="modal daily-agenda-modal fade" id="daily-agenda-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Today's Agenda</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="messages messages-img">
+                        <div class="item">
+                            <div class="image"><img src="assets/images/users/user2.jpg" alt="John Doe"/></div>
+                            <div class="text">
+                                <div class="heading">
+                                    <strong>John Doe</strong><span class="date">08:33</span>
+                                </div>
+                                Meeting at 2PM
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image"><img src="assets/images/users/user.jpg" alt="Dmitry Ivaniuk"/></div>                                
+                            <div class="text">
+                                <div class="heading">
+                                    <strong>Dmitry Ivaniuk</strong><span class="date">08:27</span>
+                                </div>  
+                                On-leave
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image"></div>
+                            <li class="list-group-item">National Heroes' Day</li>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <h3>Add Event</h3>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    <div class="padding">
+                         <div class="btn-group bootstrap-select show-tick dropdown">
+                             <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" title="Mustard, Ketchup, Relish" aria-expanded="false">
+                                 <span class="filter-option pull-left">Tags</span>
+                                 &nbsp;<span class="bs-caret">
+                                 <span class="caret">
+                                 </span>
+                                 </span>
+                             </button>
+                         <div class="dropdown-menu open" style="max-height: 353px; overflow: hidden; min-height: 38px;">
+                             <div class="bs-actionsbox">
+                                 <div class="btn-group btn-group-sm btn-block">
+                                     <button type="button" class="actions-btn bs-select-all btn btn-default">Select All</button>
+                                     <button type="button" class="actions-btn bs-deselect-all btn btn-default">Deselect All</button>
+                                 </div>
+                             </div>
+                             <ul class="dropdown-menu inner" role="menu" style="max-height: 303px; overflow-y: auto; min-height: 0px;">
+                                 <li data-original-index="0" class="selected">
+                                     <a tabindex="0" class="" style="" data-tokens="null">
+                                     <span class="text">Dexter Loor</span>
+                                     <span class="glyphicon glyphicon-ok check-mark"></span>
+                                     </a>
+                                 </li>
+                                 <li data-original-index="1" class="selected">
+                                     <a tabindex="0" class="" style="" data-tokens="null">
+                                     <span class="text">Chee Saplala</span><span class="glyphicon glyphicon-ok check-mark"></span>                                
+                                     </a>
+                                 </li>
+                                 <li data-original-index="2" class="selected">
+                                     <a tabindex="0" class="" style="" data-tokens="null">
+                                     <span class="text">Vino Angelo Bolisay</span>
+                                     <span class="glyphicon glyphicon-ok check-mark"></span>
+                                     </a>
+                                 </li>
+                             </ul>
+                         </div>
+                        </div>
+                         <button type="button" class="btn btn-default col-md-6 dropdown-alignments" type= "submit">Add Event</button>
+                     </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading5">
+                            <a data-toggle="collapse" href="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                                <h3>Request Vacation Leave &nbsp;<span id="down" class="glyphicon glyphicon-chevron-down align-glyph"></span></h3>
+                            </a>
+                        </div>
+                        <div class="collapse in" id="collapseExample" aria-expanded="true">
+                            <div class="card card-block">
+                                <p>Start Date: </p>
+                                    <div class="input-group date" data-provide="datepicker">
+                                        <input type="text" class="form-control">
+                                        <div class="input-group-addon">
+                                            <span class="glyphicon glyphicon-th"></span>
+                                        </div>
+                                    </div>
+                                <p>End Date:</p>
+                                    <div class="input-group date" data-provide="datepicker">
+                                        <input type="text" class="form-control">
+                                        <div class="input-group-addon">
+                                            <span class="glyphicon glyphicon-th"></span>
+                                        </div>
+                                    </div>
+                                <p>Reason: </p>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                                <button type="button" class="btn btn-default" type= "submit">Send Request</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END MODAL -->
+
+    <!-- START PRELOADS -->
+
+    <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
+    <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
+
+    <!-- END PRELOADS -->
+
+    <!-- START SCRIPTS -->
+
+    <!-- START PLUGINS -->
+
+    <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
+
+    <!-- END PLUGINS -->
+
+    <!-- START THIS PAGE PLUGINS-->
+
+    <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
+    <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+    <script type="text/javascript" src="js/plugins/scrolltotop/scrolltopcontrol.js"></script>
+    <script type='text/javascript' src='js/plugins/bootstrap/bootstrap-datepicker.js'></script>
+    <script type="text/javascript" src="js/plugins/owl/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/plugins/moment.min.js"></script>
+    <script type="text/javascript" src="js/plugins/daterangepicker/daterangepicker.js"></script>
+
+    <!-- END THIS PAGE PLUGINS-->
+
+    <!-- START TEMPLATE -->
+
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/actions.js"></script>
+    <script type="text/javascript" src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/marcus-script.js"></script>
+
+    <!-- END TEMPLATE -->
+
+    <!-- END SCRIPTS -->
+
+</body>
+</html>
