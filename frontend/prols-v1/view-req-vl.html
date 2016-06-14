@@ -62,32 +62,48 @@
                 </li>
                 <li>
                     <a href="#"><span class="fa fa-tasks"></span> <span class="xn-text">Notifications</span></a>
-                        <div class="informer informer-warning">2</div>
-                        <div class="notification-wrap panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
-                             <div class="panel-heading">
-                            <h3 class="panel-title"><span class="fa fa-comments"></span> Messages</h3>                                
+                    <div class="informer informer-warning">3</div>
+                    <div class="notification-wrap panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><span class="fa fa-tasks"></span> Notifications</h3>                                
                             <div class="pull-right">
-                                <span class="label label-danger">2 new</span>
+                                <span class="label label-warning">3 active</span>
                             </div>
                         </div>
-                        <div class="panel-body list-group list-group-contacts scroll" style="height: 200px;">
-                            <a href="#" class="list-group-item">
-                                
-                                <img src="assets/images/users/user3.jpg" class="pull-left" alt="John Doe"/>
-                                <span class="contacts-title"> Mitchelle Viray</span>
-                                <p>approved your requested leave.</p>
+                        <div class="panel-body list-group scroll" style="height: 200px;">                                
+                            <a class="list-group-item" href="#">
+                                <strong>Phasellus augue arcu, elementum</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
+                                </div>
+                                <small class="text-muted">John Doe, 25 Sep 2014 / 50%</small>
                             </a>
-                            <a href="#" class="list-group-item">
-                               
-                                <img src="assets/images/users/user2.jpg" class="pull-left" alt="Dmitry Ivaniuk"/>
-                                <span class="contacts-title"> Dexter Loor</span>
-                                <p>alignment meeting at 1PM!</p>
+                            <a class="list-group-item" href="#">
+                                <strong>Aenean ac cursus</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+                                </div>
+                                <small class="text-muted">Dmitry Ivaniuk, 24 Sep 2014 / 80%</small>
                             </a>
+                            <a class="list-group-item" href="#">
+                                <strong>Lorem ipsum dolor</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">95%</div>
+                                </div>
+                                <small class="text-muted">John Doe, 23 Sep 2014 / 95%</small>
+                            </a>
+                            <a class="list-group-item" href="#">
+                                <strong>Cras suscipit ac quam at tincidunt.</strong>
+                                <div class="progress progress-small">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
+                                </div>
+                                <small class="text-muted">John Doe, 21 Sep 2014 /</small><small class="text-success"> Done</small>
+                            </a>                                
                         </div>     
-                            <div class="panel-footer text-center">
-                                <a href="#.html">Show all notifications</a>
-                            </div>                            
-                        </div>
+                        <div class="panel-footer text-center">
+                            <a href="#.html">Show all tasks</a>
+                        </div>                            
+                    </div>
                 </li>
                 <li>
                     <a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span><span class="xn-text">Logout</span></a>                        
@@ -160,8 +176,8 @@
                                                     <td class="text-center" data-toggle="modal" data-target="#modal-reason">24/09/2014</td>
                                                     <td class="text-center" data-toggle="modal" data-target="#modal-reason">26/09/2014</td>
                                                     <td class="text-center">
-                                                        <a href="#" class="mb-control" data-box="#mb-sure"><span class="xn-text"><button type="button" class="btn btn-success">Accept</button></span></a>
-                                                        <a href="#" class="mb-control" data-box="#mb-sure"><span class="xn-text"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-sure">Reject</button></a>
+                                                        <a href="#" class="mb-control" data-box="#mb-accept"><span class="xn-text"><button type="button" class="btn btn-success">Accept</button></span></a>
+                                                        <a href="#" class="mb-control" data-box="#mb-reject"><span class="xn-text"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-sure">Reject</button></a>
                                                     </td>
                                                 </a>
                                             </tr>
@@ -173,8 +189,8 @@
                                                 <td class="text-center" data-toggle="modal" data-target="#modal-reason">19/09/2014</td>
                                                 <td class="text-center" data-toggle="modal" data-target="#modal-reason">22/09/2014</td>
                                                 <td class="text-center">
-                                                    <a href="#" class="mb-control" data-box="#mb-sure"><span class="xn-text"><button type="button" class="btn btn-success">Accept</button></span></a>
-                                                    <a href="#" class="mb-control" data-box="#mb-sure"><span class="xn-text"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-sure">Reject</button></a>
+                                                    <a href="#" class="mb-control" data-box="#mb-accept"><span class="xn-text"><button type="button" class="btn btn-success">Accept</button></span></a>
+                                                    <a href="#" class="mb-control" data-box="#mb-reject"><span class="xn-text"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-sure">Reject</button></a>
                                                 </td>
                                             </tr>
                                             <tr id="trow_3">
@@ -185,8 +201,8 @@
                                                 <td class="text-center" data-toggle="modal" data-target="#modal-reason">20/09/2014</td>
                                                 <td class="text-center" data-toggle="modal" data-target="#modal-reason">21/09/2014</td>
                                                 <td class="text-center">
-                                                    <a href="#" class="mb-control" data-box="#mb-sure"><span class="xn-text"><button type="button" class="btn btn-success">Accept</button></span></a>
-                                                    <a href="#" class="mb-control" data-box="#mb-sure"><span class="xn-text"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-sure">Reject</button></a>
+                                                    <a href="#" class="mb-control" data-box="#mb-accept"><span class="xn-text"><button type="button" class="btn btn-success">Accept</button></span></a>
+                                                    <a href="#" class="mb-control" data-box="#mb-reject"><span class="xn-text"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-sure">Reject</button></a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -254,6 +270,8 @@
 
     <!-- MESSAGE BOX-->
 
+    <!-- LOG OUT-->
+
     <div class="message-box animated fadeIn" data-sound="fail" id="mb-signout">
         <div class="mb-container">
             <div class="mb-middle">
@@ -271,22 +289,55 @@
             </div>
         </div>
     </div>
-    <div class="message-box animated fadeIn" data-sound="" id="mb-sure">
+
+    <!-- END LOG OUT-->
+
+    <!-- ACCEPT REQUEST -->
+
+    <div class="message-box animated fadeIn" id="mb-accept">
         <div class="mb-container">
             <div class="mb-middle">
-                <div class="mb-title"><span class="glyphicon glyphicon-thumbs-up"></span><strong>Are You Sure</strong></div>
+                <div class="mb-title"><span class="fa fa-check-circle-o"></span> <strong>Accept</strong> Request?</div>
                 <div class="mb-content">
-
+                    <p>Are you sure you want to accept this request?</p>
+                    <p>Press No if you want to continue work. Press Yes to accept the request of current employee.</p>
                 </div>
                 <div class="mb-footer">
                     <div class="pull-right">
-                        <a href="pages-login.html" class="btn btn-default btn-lg mb-control-close">Yes</a>
+                        <a href="view-req-vl.html" class="btn btn-success btn-lg btn-confirm-accept">Yes</a>
                         <button class="btn btn-default btn-lg mb-control-close">No</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- END ACCEPT REQUEST -->
+
+    <!-- REJECT REQUEST -->
+
+    <div class="message-box animated fadeIn" id="mb-reject">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-times-circle-o"></span> <strong>Reject</strong> Request?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to reject this request?</p>
+                    <p>Press No if you want to continue work. Press Yes to reject the request of current employee.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href="view-req-vl.html" class="btn btn-success btn-lg btn-confirm-reject">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END REJECT REQUEST -->
+
+    <!-- TIME IN -->
+
     <div class="message-box animated fadeIn" data-sound="alert" id="mb-timein">
         <div class="mb-container">
             <div class="mb-middle">
@@ -304,6 +355,11 @@
             </div>
         </div>
     </div>
+
+    <!-- END TIME IN -->
+
+    <!-- TIME OUT -->
+
     <div class="message-box animated fadeIn" data-sound="alert" id="mb-timeout">
         <div class="mb-container">
             <div class="mb-middle">
@@ -321,6 +377,9 @@
             </div>
         </div>
     </div>
+
+    <!-- END TIME OUT -->
+
     <div class="alert alert-success alert-message-timeout" role="alert">
         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
         <center><strong>Well done!</strong> Time Out Successfu!</center>
@@ -329,35 +388,42 @@
         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
         <center><strong>Well done!</strong> Time In Successful!</center>
     </div>
+    <div class="alert alert-success alert-message-accept" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <center><strong>Well done!</strong> Accept Request Successful!</center>
+    </div>
+    <div class="alert alert-success alert-message-reject" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <center><strong>Well done!</strong> Reject Request Successful!</center>
+    </div>
 
-    <!-- END MESSAGE BOX-->
+<!-- END MESSAGE BOX-->
 
-    <!-- START PRELOADS -->
+<!-- START PRELOADS -->
 
-    <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
-    <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
-    <!-- END PRELOADS -->                  
-    <!-- START SCRIPTS -->
-    <!-- START PLUGINS -->
-    <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>        
+<audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
+<audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
+<!-- END PRELOADS -->                  
+<!-- START SCRIPTS -->
+<!-- START PLUGINS -->
+<script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>        
 
-    <!-- END PLUGINS -->
+<!-- END PLUGINS -->
 
-    <!-- START THIS PAGE PLUGINS-->  
+<!-- START THIS PAGE PLUGINS-->  
 
-    <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>        
-    <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
-    <script type="text/javascript" src="js/plugins/scrolltotop/scrolltopcontrol.js"></script>
-    <script type="text/javascript" src="js/plugins.js"></script>        
-    <script type="text/javascript" src="js/actions.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/marcus-script.js"></script>
+<script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>        
+<script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+<script type="text/javascript" src="js/plugins/scrolltotop/scrolltopcontrol.js"></script>
+<script type="text/javascript" src="js/plugins.js"></script>        
+<script type="text/javascript" src="js/actions.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
-    <!-- END TEMPLATE -->
+<!-- END TEMPLATE -->
 
-    <!-- END SCRIPTS --> 
+<!-- END SCRIPTS --> 
 
 </body>
 </html>
