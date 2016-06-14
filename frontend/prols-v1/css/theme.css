@@ -2049,15 +2049,15 @@ ul.panel-controls > li > .dropdown-menu:before {
 }
 .btn-info {
   background-color: #3fbae4;
-  border-color: #3fbae4;
+ /* border-color: #3fbae4;*/
 }
 .btn-info:hover,
 .btn-info:focus,
 .btn-info:active,
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
-  background-color: #29b2e1;
-  border-color: #29b2e1;
+  background-color: #f9a021;
+/*  border-color: #29b2e1;*/
 }
 .btn-info[disabled],
 .btn-info.disabled {
@@ -3876,7 +3876,7 @@ td.dataTables_empty {
   float: left;
   width: 100%;
   min-height: 100%;
-  background: url("../img/bg.png") left top repeat #33414e;
+  background-color: #595959;
 }
 .login-container .login-box {
   width: 400px;
