@@ -32,7 +32,7 @@
 
 .login-container .login-box .login-logo{
 	background-image: url("../img/propelrrlogo.png");
-	background-size: 220px 50px;
+	
 }
 
 .x-navigation li > .notification-wrap.panel.xn-drop-left{
@@ -142,4 +142,10 @@
 		max-width: 100%;
 		position: static;
 	}
+}
+
+.alignment-filter{
+		font-size: 16px;
+		margin-right: 8px;
+		margin-left: 18px;
 }
