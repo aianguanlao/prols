@@ -168,3 +168,7 @@ div.datepicker {
     z-index: 9999 !IMPORTANT;
     float: right;
 }
+
+.dropdown-alignments {
+	margin-right: 60px;
+}
