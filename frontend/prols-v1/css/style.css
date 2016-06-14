@@ -32,7 +32,7 @@
 
 .login-container .login-box .login-logo{
 	background-image: url("../img/propelrrlogo.png");
-	
+	background-size: 220px 50px;
 }
 
 .x-navigation li > .notification-wrap.panel.xn-drop-left{
@@ -79,6 +79,26 @@
 	width: 100%;
 	opacity: 1;
 }
+
+.alert-message-accept{
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 1;
+}
+
+.alert-message-reject{
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 1;
+}
+
+
 
 .profile-content{
 	position: fixed; max-width: 25%;
@@ -142,10 +162,4 @@
 		max-width: 100%;
 		position: static;
 	}
-}
-
-.alignment-filter{
-		font-size: 16px;
-		margin-right: 8px;
-		margin-left: 18px;
 }
