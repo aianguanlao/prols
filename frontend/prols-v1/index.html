@@ -32,84 +32,89 @@
 
             <!-- START X-NAVIGATION -->
 
-           <ul class="x-navigation">
-                    <li class="xn-logo">
-                        <a href="{{ path('admin_homepage') }}">PROPELRR</a>
-                        <a href="#" class="x-navigation-control"></a>
-                    </li>
-                    <li class="xn-profile">
-                        <a href="#" class="profile-mini">
-                            <img src="{{asset('assets/images/users/no-image.jpg')}}" alt=""/>
-                        </a>
-                        <div class="profile">
-                            <div class="profile-image">
-                                <img src="{{asset('assets/images/users/no-image.jpg')}}" alt=""/>
-                            </div>
-                            <div class="profile-data">
-                                <div class="profile-data-name">Lorem Ipsum</div>
-                            </div>
+            <ul class="x-navigation">
+                <li class="xn-logo">
+                    <a href="index.html">PROPELRR</a>
+                    <a href="#" class="x-navigation-control"></a>
+                </li>
+                <li class="xn-profile">
+                    <a href="#" class="profile-mini">
+                        <img src="assets/images/users/no-image.jpg" alt=""/>
+                    </a>
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="assets/images/users/no-image.jpg" alt=""/>
                         </div>
-                    </li>
-                    <li class="xn-title">User Navigation</li>
-                    <li class="active">
+                        <div class="profile-data">
+                            <div class="profile-data-name">Lorem Ipsum</div>
+                        </div>
+                    </div>
+                </li>
                 <li class="xn-title">User Navigation</li>
                 <li class="active">
-                 <!--    <a href="index.html"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a> -->
-                 <a href="{{ path('admin_homepage') }}"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
+                    <a href="index.html"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
                 </li>
                 <li>
-                      <a href="index.html" class="mb-control btn-time" id="time-in-button" data-id="{{ user.id }}"
-                                {% if timename == true %}
-                                    data-time="time-in"> <span class="fa fa-clock-o"></span> Time In
-                                {% else %}
-                                    data-time="time-out"> <span class="fa fa-clock-o"></span> Time Out
-                                {% endif %}
-                        </a>
+                    <a href="index.html" class="mb-control btn-time"><span class="fa fa-clock-o"></span> <span class="xn-text">Time In</span></a>
                 </li>
                 <li>
-                    <a href="{{ path('profile_page') }}"><span class="fa fa-user"></span> <span class="xn-text">View Profile</span></a>
+                    <a href="page-profile.html"><span class="fa fa-user"></span> <span class="xn-text">View Profile</span></a>
                 </li>
                 <li>
                     <a href="#"><span class="fa fa-tasks"></span> <span class="xn-text">Notifications</span></a>
-                        <div class="informer informer-warning">2</div>
-                        <div class="notification-wrap panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
-                             <div class="panel-heading">
-                            <h3 class="panel-title"><span class="fa fa-comments"></span> Messages</h3>                                
+                    <div class="informer informer-warning">3</div>
+                    <div class="notification-wrap panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><span class="fa fa-tasks"></span> Notifications</h3>                                
                             <div class="pull-right">
-                                <span class="label label-danger">2 new</span>
+                                <span class="label label-warning">3 active</span>
                             </div>
                         </div>
-                        <div class="panel-body list-group list-group-contacts scroll" style="height: 200px;">
-                            <a href="#" class="list-group-item">
-                                
-                                <img src="assets/images/users/user3.jpg" class="pull-left" alt="John Doe"/>
-                                <span class="contacts-title"> Mitchelle Viray</span>
-                                <p>approved your requested leave.</p>
+                        <div class="panel-body list-group scroll" style="height: 200px;">                                
+                            <a class="list-group-item" href="#">
+                                <strong>Phasellus augue arcu, elementum</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
+                                </div>
+                                <small class="text-muted">John Doe, 25 Sep 2014 / 50%</small>
                             </a>
-                            <a href="#" class="list-group-item">
-                               
-                                <img src="assets/images/users/user2.jpg" class="pull-left" alt="Dmitry Ivaniuk"/>
-                                <span class="contacts-title"> Dexter Loor</span>
-                                <p>alignment meeting at 1PM!</p>
+                            <a class="list-group-item" href="#">
+                                <strong>Aenean ac cursus</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+                                </div>
+                                <small class="text-muted">Dmitry Ivaniuk, 24 Sep 2014 / 80%</small>
                             </a>
+                            <a class="list-group-item" href="#">
+                                <strong>Lorem ipsum dolor</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">95%</div>
+                                </div>
+                                <small class="text-muted">John Doe, 23 Sep 2014 / 95%</small>
+                            </a>
+                            <a class="list-group-item" href="#">
+                                <strong>Cras suscipit ac quam at tincidunt.</strong>
+                                <div class="progress progress-small">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
+                                </div>
+                                <small class="text-muted">John Doe, 21 Sep 2014 /</small><small class="text-success"> Done</small>
+                            </a>                                
                         </div>     
-                            <div class="panel-footer text-center">
-                                <a href="#.html">Show all notifications</a>
-                            </div>                            
-                        </div>
+                        <div class="panel-footer text-center">
+                            <a href="#.html">Show all tasks</a>
+                        </div>                            
+                    </div>
                 </li>
                 <li>
-                    <a href="{{ path('logout') }}" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span><span class="xn-text">Logout</span></a>
+                    <a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span><span class="xn-text">Logout</span></a>
                 </li>
                 <li class="xn-title">Admin Navigation</li>
-                 {% if role == 'ADMIN' %}
-                        <li>
-                            <a href="view-req-vl.html"><span class="fa fa-book"></span> <span class="xn-text">View Requests</span></a>
-                        </li>
-                        <li>
-                            <a href="manage-emp.html"><span class="fa fa-users"></span> <span class="xn-text">Manage Employees</span></a>
-                        </li>
-                    {% endif %}
+                <li>
+                    <a href="view-req-vl.html"><span class="fa fa-book"></span> <span class="xn-text">View Leave Requests</span></a>
+                </li>
+                <li>
+                    <a href="manage-emp.html"><span class="fa fa-users"></span> <span class="xn-text">Manage Employees</span></a>
+                </li>
                 <div class="widget widget-danger widget-padding-sm" id="clock">
                     <div class="widget-big-int plugin-clock">00:00</div>
                     <div class="widget-subtitle plugin-date">Loading...</div>
@@ -127,10 +132,11 @@
         <div class="page-content">
 
             <!-- START BREADCRUMB -->
-                <ul class="breadcrumb">
-                    <li><a href="{{ path('admin_homepage') }}">Home</a></li>
-                    <li class="active">Dashboard</li>
-                </ul>
+
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Dashboard</li>
+            </ul>
 
             <!-- END BREADCRUMB -->
 
@@ -167,98 +173,100 @@
     <!-- MESSAGE BOX-->
 
     <div class="message-box animated fadeIn" data-sound="fail" id="mb-signout">
-            <div class="mb-container">
-                <div class="mb-middle">
-                    <div class="mb-title"><span class="fa fa-sign-out"></span> Log <strong>Out</strong> ?</div>
-                    <div class="mb-content">
-                        <p>Are you sure you want to log out?</p>
-                        <p>Press No if you want to continue work. Press Yes to logout current user.</p>
-                    </div>
-                    <div class="mb-footer">
-                        <div class="pull-right">
-                            <a href="{{ path('logout') }}" class="btn btn-success btn-lg">Yes</a>
-                            <button class="btn btn-default btn-lg mb-control-close">No</button>
-                        </div>
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-sign-out"></span> Log <strong>Out</strong> ?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to log out?</p>
+                    <p>Press No if you want to continue work. Press Yes to logout current user.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href="pages-login.html" class="btn btn-success btn-lg">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="message-box animated fadeIn" data-sound="alert" id="mb-timein">
-            <div class="mb-container">
-                <div class="mb-middle">
-                    <div class="mb-title"><span class="fa fa-clock-o"></span> Time <strong>
-                    {% if timename == true %}
-                        In
-                    {% else %}
-                        Out
-                    {% endif %}
-                    </strong> ?
-                    </div>
-                    <div class="mb-content">
-                                {% if timename == true %}
-                                    <p>Are you sure you want to time in?</p>
-                                    <p>Press No if you want to continue work. Press Yes to time in current user.</p>
-                                {% else %}
-                                    <p>Are you sure you want to time out?</p>
-                                    <p>Press No if you want to continue work. Press Yes to time out current user.</p>                                   
-                                {% endif %}
-                    </div>
-                    <div class="mb-footer">
-                        <div class="pull-right">
-                            <a href="{{ path('admin_homepage') }}" class="btn btn-success btn-lg btn-confirm-timein">Yes</a>
-                            <button class="btn btn-default btn-lg mb-control-close">No</button>
-                        </div>
+    </div>
+    <div class="message-box animated fadeIn" data-sound="alert" id="mb-timein">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-clock-o"></span> Time <strong>In</strong> ?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to time in?</p>
+                    <p>Press No if you want to continue work. Press Yes to time in current user.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href="index.html" class="btn btn-success btn-lg btn-confirm-timein">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="alert alert-success alert-message-timeout" role="alert">
-            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-            <center><strong>Well done!</strong> Time Out Successfu!</center>
+    </div>
+    <div class="message-box animated fadeIn" data-sound="alert" id="mb-timeout">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-clock-o"></span> Time <strong>Out</strong> ?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to time out?</p>
+                    <p>Press No if you want to continue work. Press Yes to time out current user.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href="index.html" class="btn btn-success btn-lg btn-confirm-timeout">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    <div class="alert alert-success alert-message-timeout" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <center><strong>Well done!</strong> Time Out Successfu!</center>
+    </div>
+    <div class="alert alert-success alert-message-timein" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <center><strong>Well done!</strong> Time In Successful!</center>
+    </div>
 
     <!-- END MESSAGE BOX-->
 
     <!-- START MODAL -->
 
-   <div class="modal daily-agenda-modal fade" id="daily-agenda-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Today's Agenda</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="messages messages-img">
-                            <div class="item">
-                                <div class="image"><img src="{{asset('assets/images/users/user2.jpg')}}" alt="John Doe"/></div>
-                                <div class="text">
-                                    <div class="heading">
-                                        <strong>John Doe</strong><span class="date">08:33</span>
-                                    </div>
-                                    Meeting at 2PM
+    <div class="modal daily-agenda-modal fade" id="daily-agenda-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Today's Agenda</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="messages messages-img">
+                        <div class="item">
+                            <div class="image"><img src="assets/images/users/user2.jpg" alt="John Doe"/></div>
+                            <div class="text">
+                                <div class="heading">
+                                    <strong>John Doe</strong><span class="date">08:33</span>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="image"><img src="{{asset('assets/images/users/user.jpg')}}" alt="Dmitry Ivaniuk"/></div>                                
-                                <div class="text">
-                                    <div class="heading">
-                                        <strong>Dmitry Ivaniuk</strong><span class="date">08:27</span>
-                                    </div>  
-                                    On-leave
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="image"></div>
-                                <li class="list-group-item">National Heroes' Day</li>
+                                Meeting at 2PM
                             </div>
                         </div>
-                        <div class="form-group">
-                            <h3>Add Event</h3>
-                            <textarea class="form-control" rows="5" id="comment"></textarea>
-                            <button type="button" class="btn btn-default" type= "submit">Add Event</button>
+                        <div class="item">
+                            <div class="image"><img src="assets/images/users/user.jpg" alt="Dmitry Ivaniuk"/></div>                                
+                            <div class="text">
+                                <div class="heading">
+                                    <strong>Dmitry Ivaniuk</strong><span class="date">08:27</span>
+                                </div>  
+                                On-leave
+                            </div>
                         </div>
-<<<<<<< HEAD
+                        <div class="item">
+                            <div class="image"></div>
+                            <li class="list-group-item">National Heroes' Day</li>
+                        </div>
                     </div>
                     <div class="form-group">
                         <h3>Add Event</h3>
@@ -268,10 +276,10 @@
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="heading5">
                             <a data-toggle="collapse" href="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
-                                <h3>Request Vacation On-leaveve &nbsp;<span id="down" class="glyphicon glyphicon-chevron-down align-glyph"></span></h3>
+                                <h3>Request Vacation Leave &nbsp;<span id="down" class="glyphicon glyphicon-chevron-down align-glyph"></span></h3>
                             </a>
                         </div>
-                        <div class="collapse in" id="collapseExample" aria-expanded="true"> 
+                        <div class="collapse in" id="collapseExample" aria-expanded="true">
                             <div class="card card-block">
                                 <p>Start Date: </p>
                                 <div class="input-group date" data-provide="datepicker"><input type="text" class="form-control">
@@ -280,44 +288,26 @@
                                 <p>End Date:</p>
                                 <div class="input-group date" data-provide="datepicker"><input type="text" class="form-control">
                                     <div class="input-group-addon"><span class="glyphicon glyphicon-th"></span></div>
-=======
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="heading5">
-                                <a data-toggle="collapse" href="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
-                                    <h3>Request Vacation Leave &nbsp;<span id="down" class="glyphicon glyphicon-chevron-down align-glyph"></span></h3>
-                                </a>
-                            </div>
-                            <div class="collapse in" id="collapseExample" aria-expanded="true">
-                                <div class="card card-block">
-                                    <p>Start Date: </p>
-                                    <div class="input-group date" data-provide="datepicker"><input type="text" class="form-control">
-                                        <div class="input-group-addon"><span class="glyphicon glyphicon-th"></span></div>
-                                    </div>
-                                    <p>End Date:</p>
-                                    <div class="input-group date" data-provide="datepicker"><input type="text" class="form-control">
-                                        <div class="input-group-addon"><span class="glyphicon glyphicon-th"></span></div>
-                                    </div>
-                                    <p>Reason: </p>
-                                    <textarea class="form-control" rows="5" id="comment"></textarea>
-                                    <button type="button" class="btn btn-default" type= "submit">Send Request</button>
->>>>>>> 853eebb8614cc479ee466c50f72e1475c7108a48
                                 </div>
+                                <p>Reason: </p>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                                <button type="button" class="btn btn-default" type= "submit">Send Request</button>
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                    </div>
+                </div>
+                <div class="modal-footer">
                 </div>
             </div>
         </div>
-
+    </div>
 
     <!-- END MODAL -->
 
     <!-- START PRELOADS -->
 
-    <audio id="audio-alert" src="{{asset('audio/alert.mp3')}}" preload="auto"></audio>
-    <audio id="audio-fail" src="{{asset('audio/fail.mp3')}}" preload="auto"></audio>
+    <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
+    <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
 
     <!-- END PRELOADS -->
 
@@ -325,83 +315,35 @@
 
     <!-- START PLUGINS -->
 
-    <script type="text/javascript" src="{{asset('js/plugins/jquery/jquery.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/plugins/jquery/jquery-ui.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/plugins/bootstrap/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
 
     <!-- END PLUGINS -->
 
     <!-- START THIS PAGE PLUGINS-->
 
-    <script type='text/javascript' src="{{asset('js/plugins/icheck/icheck.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/plugins/scrolltotop/scrolltopcontrol.js')}}"></script>
-    <script type='text/javascript' src="{{asset('js/plugins/bootstrap/bootstrap-datepicker.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/plugins/owl/owl.carousel.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/plugins/moment.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/plugins/daterangepicker/daterangepicker.js')}}"></script>
+    <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
+    <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+    <script type="text/javascript" src="js/plugins/scrolltotop/scrolltopcontrol.js"></script>
+    <script type='text/javascript' src='js/plugins/bootstrap/bootstrap-datepicker.js'></script>
+    <script type="text/javascript" src="js/plugins/owl/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/plugins/moment.min.js"></script>
+    <script type="text/javascript" src="js/plugins/daterangepicker/daterangepicker.js"></script>
 
     <!-- END THIS PAGE PLUGINS-->
 
     <!-- START TEMPLATE -->
 
-    <script type="text/javascript" src="{{asset('js/plugins.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/actions.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/plugins/fullcalendar/fullcalendar.min.js')}}"></script>
-
-    <!-- <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/actions.js"></script>
     <script type="text/javascript" src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/marcus-script.js"></script> -->
+    <script type="text/javascript" src="js/marcus-script.js"></script>
 
     <!-- END TEMPLATE -->
 
     <!-- END SCRIPTS -->
 
 </body>
-
-<script>
-   $('.btn-confirm-timein').click(function(e){
-        e.preventDefault();
-        var id = $('#time-in-button').data('id'), timename = $('#time-in-button').data('time');
-        // confirmText = 'Are you sure you want to ' + $(this).text();
-                    // $('.alert-message-timein').show();
-                    // $('#mb-timein').removeClass('open');
-
-            $.get("{{ path('admin_time_in_no_params') }}" + id,  function(data){
-                console.log(data);
-                // var confirmTime = confirm(confirmText);
-                if (data.length > 0){
-                    if(data[1] == 1){
-                        console.log("Time Out");
-                        $('#time-in-button').html('<span class="fa fa-clock-o"></span>Time Out'); 
-                        $('#mb-timein').find('.mb-content').html("<p>Are you sure you want to time out?</p> <p>Press No if you want to continue work. Press Yes to time out current user.</p>");
-                        $('#mb-timein').find('.mb-title').html('<span class="fa fa-clock-o"></span> Time <strong>Out</strong> ?');
-
-                    } else if(data[1] == 2){
-                        console.log("Time In");
-                        $('#time-in-button').html('<span class="fa fa-clock-o"></span>Time In'); //.......
-                        $('#mb-timein').find('.mb-content').html("<p>Are you sure you want to time in?</p> <p>Press No if you want to continue work. Press Yes to time in current user.</p>");
-                        $('#mb-timein').find('.mb-title').html('<span class="fa fa-clock-o"></span> Time <strong>In</strong> ?');
-                    }
-                    $('.alert-message-timein').show();
-                    $('#mb-timein').removeClass('open');
-                }else{
-
-                }
-            }, "json");
-
-   });
-
-        
-    $('#time-in-button').click(function(e){
-        e.preventDefault();
-        var time = $(this).data('time');
-        $('#mb-timein').addClass('open');
-
-
-        return false;
-    });
-    </script>
 </html>
