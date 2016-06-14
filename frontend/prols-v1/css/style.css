@@ -143,3 +143,9 @@
 		position: static;
 	}
 }
+
+.alignment-filter{
+		font-size: 16px;
+		margin-right: 8px;
+		margin-left: 18px;
+}
