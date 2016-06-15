@@ -239,3 +239,8 @@
 		position: static;
 	}
 }
+div.datepicker {
+	position: absolute;
+    z-index: 9999 !IMPORTANT;
+    float: right;
+}
