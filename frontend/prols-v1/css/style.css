@@ -149,6 +149,82 @@
 	color: black;
 }
 
+.form-control{
+	/*border: none;*/
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
+	cursor: auto;
+	background-color: #ffffff;
+
+}
+
+.profile-info-form input[type="text"], .profile-info-form input[type="email"] {
+
+	
+	border: none;
+	width: auto;
+	/*margin-left: 5px;*/
+	padding: 5px 0;
+}
+
+.edit-this  {
+	position: absolute;
+	bottom: 14px;
+	right: 5px;
+	font-style: italic;
+	color: #e60000;
+	display: none;
+	/*font-weight: bold;*/
+	margin-right: 5px;
+
+}
+
+.list-group-item b{
+	margin-right: 5px;
+}
+
+
+
+/*.button-edit-profile h3{
+	color: #ffffff;
+	background-color: #2d3945;
+	padding: 10px;
+	margin-left: 90px;
+	margin-right: 90px;
+	border-radius: 7%;
+
+}*/
+
+.btn-default{
+	margin: 10px;
+	text-transform: uppercase;
+}
+
+.btn-success{
+	display: none;
+	margin: 10px;
+	text-transform: uppercase;
+}
+
+.btn-warning{
+	display: none;
+	margin: 10px;
+	text-transform: uppercase;
+	background-color: #00BDDD;
+	border: none;
+}
+
+
+
+.required{
+	color: red;
+	font-weight: bold;
+	display: none;
+	font-size: 10px;
+	
+}
+
 @media only screen and (max-width: 990px){
 
 .profile-content{
