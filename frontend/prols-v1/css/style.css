@@ -3,7 +3,6 @@ body{
 }
 
 
-
 .widget{
 	background: #2f3c48;
 }
@@ -71,6 +70,7 @@ body{
 	left: 0;
 	width: 100%;
 	opacity: 1;
+	cursor: pointer;
 	-webkit-transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
  	-moz-transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
  	-o- transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);;
@@ -93,6 +93,7 @@ body{
 	left: 0;
 	width: 100%;
 	opacity: 1;
+	cursor: pointer;
 
 
  	-webkit-transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
@@ -349,6 +350,8 @@ body{
 		max-width: 100%;
 		position: static;
 	}
+}
+
 }
 div.datepicker {
 	position: absolute;
