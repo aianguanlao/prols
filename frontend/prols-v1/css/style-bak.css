@@ -164,6 +164,7 @@
 		position: static;
 	}
 }
+<<<<<<< HEAD
 
 .modal-dialog {
     width: 600px;
@@ -172,18 +173,17 @@
 .btn-time.btn-success.time-out{
 	background-color: #d9534f;
     border-color: #d43f3a;
-
 }
 .table-manage-emp tr td a{
 	display: block;
-}
-
-.div.datepicker {
+=======
+div.datepicker {
 	position: absolute;
-    z-index: 9999 !important;
+    z-index: 9999 !IMPORTANT;
     float: right;
 }
 
 .dropdown-alignments {
 	margin-right: 60px;
+>>>>>>> 072b93540636454ec79172caa2a67462c9b6123c
 }
