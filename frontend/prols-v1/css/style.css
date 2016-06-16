@@ -1,3 +1,9 @@
+body{
+	font-size: 14px;
+}
+
+
+
 .widget{
 	background: #2f3c48;
 }
@@ -65,6 +71,15 @@
 	left: 0;
 	width: 100%;
 	opacity: 1;
+	-webkit-transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+ 	-moz-transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+ 	-o- transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);;
+  	transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.alert-message-timeout.anim{
+	opacity: 0;
+	top: -55px;
 }
 
 .alert{
@@ -78,6 +93,18 @@
 	left: 0;
 	width: 100%;
 	opacity: 1;
+
+
+ 	-webkit-transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+ 	-moz-transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+ 	-o- transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);;
+  	transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.alert-message-timein.anim {
+	opacity: 0;
+	top: -55px;
+
 }
 
 .alert-message-accept{
@@ -98,7 +125,13 @@
 	opacity: 1;
 }
 
+/*#close-alert .alert-message-timein*/
 
+/*#close-alert .anim{
+	opacity: 0;
+	top: -55px;
+
+}*/
 
 .profile-content{
 	position: fixed; max-width: 25%;
@@ -202,7 +235,7 @@
 }
 
 .btn-success{
-	display: none;
+	/*display: none;*/
 	margin: 10px;
 	text-transform: uppercase;
 }
@@ -215,6 +248,10 @@
 	border: none;
 }
 
+.btn-save-profile{
+	display: none;
+}
+
 
 
 .required{
@@ -224,6 +261,80 @@
 	font-size: 10px;
 	
 }
+
+#tel .required{
+	color: red;
+	font-style: italic;
+	display: none;
+	font-size: 10px;
+
+}
+
+#cel .required{
+	color: red;
+	font-style: italic;
+	display: none;
+	font-size: 10px;
+}
+
+#addr .required{
+	color: red;
+	font-style: italic;
+	display: none;
+	font-size: 10px;
+}
+
+/**start of daily agenda**/
+
+#addevent .btn-addevent{
+	font-size: 12px;
+	color: white;
+	font-weight: bold;
+	background-color: #00BDDD;
+	margin-top: 10px;
+	padding: 5px;
+	border: none;
+	border-radius: 7%;
+
+}
+
+#sendreq .btn-sendreq{
+	font-size: 12px;
+	color: white;
+	font-weight: bold;
+	background-color: #00BDDD;
+	margin-top: 10px;
+	padding: 5px;
+	border: none;
+	border-radius: 7%;
+
+}
+
+#sendreq .btn-sendreq:hover{
+	background-color: #eaaf0f;
+}
+#addevent .btn-addevent:hover{
+	background-color: #eaaf0f;
+}
+
+.success-addevent{
+	display:none;
+}
+
+.errormsg-addevent{
+	display: none;
+	color: red;
+	font-style: italic;
+
+}
+
+.form-group h3{
+	margin: auto;
+}
+
+/**end of daily agenda**/
+
+
 
 @media only screen and (max-width: 990px){
 
