@@ -16,12 +16,13 @@ $(document).ready(function(){
         $('#mb-timein').removeClass('open');
         $('.btn-time').addClass('time-out').find('.xn-text').html('Time Out');
 
-// if($('.btn-time').hasClass('time-out')) {
-//        $('.btn-time').removeClass('time-out').find('.xn-text').html('Time In');
-//    } else {
+});
+    $('.btn-confirm-timeout').click(function(e){
+        e.preventDefault();
 
+        $('#mb-timeout').removeClass('open');
+        $('.btn-time').removeClass('time-out').find('.xn-text').html('Time In');
 
-//    }
 });
 
     $(document).ready(function(){        

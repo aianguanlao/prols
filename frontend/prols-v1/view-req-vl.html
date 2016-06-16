@@ -50,12 +50,16 @@
                         </div>
                     </div>
                 </li>
+                <div class="widget widget-danger widget-padding-sm" id="clock">
+                    <div class="widget-big-int plugin-clock">00:00</div>
+                    <div class="widget-subtitle plugin-date">Loading...</div>
+                </div>
+                <li>
+                    <center><button type="button" href="index.html" class="btn btn-success btn-lg mb-control btn-time"><span class="fa fa-clock-o"></span> <span class="xn-text">Time In</span></button></center>
+                </li>
                 <li class="xn-title">User Navigation</li>
                 <li>
                     <a href="index.html"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>                        
-                </li>
-                <li>
-                    <a href="index.html" class="mb-control btn-time"><span class="fa fa-clock-o"></span> <span class="xn-text">Time In</span></a>
                 </li>
                 <li>
                     <a href="page-profile.html"><span class="fa fa-user"></span> <span class="xn-text">View Profile</span></a>                        
@@ -115,10 +119,6 @@
                 <li>
                     <a href="manage-emp.html"><span class="fa fa-users"></span> <span class="xn-text">Manage Employees</span></a>                        
                 </li>
-                <div class="widget widget-danger widget-padding-sm" id="clock">
-                    <div class="widget-big-int plugin-clock">00:00</div>                            
-                    <div class="widget-subtitle plugin-date">Loading...</div>
-                </div>
             </ul>
 
             <!-- END X-NAVIGATION -->
@@ -265,6 +265,28 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="rejectreason" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Reject Leave Request</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <fieldset class="form-group">
+                            <label for="reason">Reason</label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </fieldset> 
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send to Email</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- END MODAL -->
 
@@ -326,7 +348,8 @@
                 </div>
                 <div class="mb-footer">
                     <div class="pull-right">
-                        <a href="view-req-vl.html" class="btn btn-success btn-lg btn-confirm-reject">Yes</a>
+
+                        <a href="view-req-vl.html" class="btn btn-success btn-lg btn-confirm-reject" data-toggle="modal" data-target="#rejectreason">Yes</a>
                         <button class="btn btn-default btn-lg mb-control-close">No</button>
                     </div>
                 </div>
@@ -397,33 +420,33 @@
         <center><strong>Well done!</strong> Reject Request Successful!</center>
     </div>
 
-<!-- END MESSAGE BOX-->
+    <!-- END MESSAGE BOX-->
 
-<!-- START PRELOADS -->
+    <!-- START PRELOADS -->
 
-<audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
-<audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
-<!-- END PRELOADS -->                  
-<!-- START SCRIPTS -->
-<!-- START PLUGINS -->
-<script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
-<script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>        
+    <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
+    <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
+    <!-- END PRELOADS -->                  
+    <!-- START SCRIPTS -->
+    <!-- START PLUGINS -->
+    <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>        
 
-<!-- END PLUGINS -->
+    <!-- END PLUGINS -->
 
-<!-- START THIS PAGE PLUGINS-->  
+    <!-- START THIS PAGE PLUGINS-->  
 
-<script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>        
-<script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
-<script type="text/javascript" src="js/plugins/scrolltotop/scrolltopcontrol.js"></script>
-<script type="text/javascript" src="js/plugins.js"></script>        
-<script type="text/javascript" src="js/actions.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+    <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>        
+    <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+    <script type="text/javascript" src="js/plugins/scrolltotop/scrolltopcontrol.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>        
+    <script type="text/javascript" src="js/actions.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
-<!-- END TEMPLATE -->
+    <!-- END TEMPLATE -->
 
-<!-- END SCRIPTS --> 
+    <!-- END SCRIPTS --> 
 
 </body>
 </html>
