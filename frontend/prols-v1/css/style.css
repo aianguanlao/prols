@@ -384,3 +384,7 @@ div.datepicker {
 .dropdown-alignments {
 	margin-right: 60px;
 }
+
+.login-container .login-box .login-logo {
+    background-image: url("../img/propelrrlogo.png");
+    background-size: 175px 175px;
