@@ -50,12 +50,16 @@
                         </div>
                     </div>
                 </li>
+                <div class="widget widget-danger widget-padding-sm" id="clock">
+                    <div class="widget-big-int plugin-clock">00:00</div>
+                    <div class="widget-subtitle plugin-date">Loading...</div>
+                </div>
+                <li>
+                    <center><button type="button" href="index.html" class="btn btn-success btn-lg mb-control btn-time"><span class="fa fa-clock-o"></span> <span class="xn-text">Time In</span></button></center>
+                </li>
                 <li class="xn-title">User Navigation</li>
                 <li>
                     <a href="index.html"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
-                </li>
-                <li>
-                    <a href="index.html" class="mb-control btn-time"><span class="fa fa-clock-o"></span> <span class="xn-text">Time In</span></a>
                 </li>
                 <li class="active">
                     <a href="page-profile.html"><span class="fa fa-user"></span> <span class="xn-text">View Profile</span></a>
@@ -99,10 +103,6 @@
                 <li>
                     <a href="manage-emp.html"><span class="fa fa-users"></span> <span class="xn-text">Manage Employees</span></a>
                 </li>
-                <div class="widget widget-danger widget-padding-sm" id="clock">
-                    <div class="widget-big-int plugin-clock">00:00</div>
-                    <div class="widget-subtitle plugin-date">Loading...</div>
-                </div>
             </ul>
 
             <!-- END X-NAVIGATION -->
@@ -144,7 +144,7 @@
                                 </div>        -->                             
                             </div>                                
                             <div class="panel-body list-group profile-info-form">
-                                <div class="list-group-item">
+                                 <div class="list-group-item">
                                     <b>Employee Number:</b> 001 <!-- <input type="text" id="empNum" type="text" placeholder="" value="007" readonly="true"> -->
                                 </div>
 
@@ -315,7 +315,7 @@
                         </div>
                         <div class="mb-footer">
                             <div class="pull-right">
-                                <a href="pages-login.html" class="btn btn-success btn-lg">Yes</a>
+                                <a href="login.html" class="btn btn-success btn-lg">Yes</a>
                                 <button class="btn btn-default btn-lg mb-control-close">No</button>
                             </div>
                         </div>
@@ -356,18 +356,20 @@
                     </div>
                 </div>
             </div>
-            <div class="alert alert-success alert-message-timeout" role="alert">
-                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                <center><strong>Well done!</strong> Time Out Successfu!</center>
-            </div>
-            <div class="alert alert-success alert-message-timein" role="alert">
-                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                <center><strong>Well done!</strong> Time In Successful!</center>
-            </div>
+        <div id="close-alert1" class="alert alert-success alert-message-timeout" role="alert">
+            <center><strong>Well done!</strong> Time Out Successful!</center>
+        </div>
+        <div id="close-alert2" class="alert alert-success alert-message-timein" role="alert">
+            <center><strong>Well done!</strong> Time In Successful!</center></a>
+        </div>
 
                         <!-- Button trigger modal -->
             <!-- Modal -->
+
           <!--   <div class="modal fade" id="Edits" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+=======
+            <div class="modal fade" id="editprofile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+>>>>>>> f41a75a2b42ffda4a26a9a21c0d3a3f180265942
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">

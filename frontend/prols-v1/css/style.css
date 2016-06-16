@@ -9,6 +9,7 @@ body{
 
 #clock{
 	background: #2f3c48;
+	min-height: 0;
 }
 
 .x-navigation > li.xn-logo > a:first-child{
@@ -128,11 +129,11 @@ body{
 
 /*#close-alert .alert-message-timein*/
 
-/*#close-alert .anim{
+#close-alert .anim{
 	opacity: 0;
 	top: -55px;
 
-}*/
+}
 
 .profile-content{
 	position: fixed; max-width: 25%;
@@ -230,12 +231,16 @@ body{
 
 }*/
 
+.btn-danger{
+	text-transform: uppercase;
+}
+
 .btn-default{
 	margin: 10px;
 	text-transform: uppercase;
 }
 
-.btn-success{
+.btn-success {
 	/*display: none;*/
 	margin: 10px;
 	text-transform: uppercase;
@@ -352,10 +357,27 @@ body{
 	}
 }
 
+<<<<<<< HEAD
 }
 div.datepicker {
+=======
+.modal-dialog {
+    width: 600px;
+    margin: 100px auto;
+}
+.btn-time.btn-success.time-out{
+	background-color: #d9534f;
+    border-color: #d43f3a;
+
+}
+.table-manage-emp tr td a{
+	display: block;
+}
+
+.div.datepicker {
+>>>>>>> f41a75a2b42ffda4a26a9a21c0d3a3f180265942
 	position: absolute;
-    z-index: 9999 !IMPORTANT;
+    z-index: 9999 !important;
     float: right;
 }
 
