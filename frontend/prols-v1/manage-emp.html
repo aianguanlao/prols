@@ -50,12 +50,16 @@
                         </div>
                     </div>
                 </li>
+                <div class="widget widget-danger widget-padding-sm" id="clock">
+                    <div class="widget-big-int plugin-clock">00:00</div>
+                    <div class="widget-subtitle plugin-date">Loading...</div>
+                </div>
+                <li>
+                    <center><button type="button" href="index.html" class="btn btn-success btn-lg mb-control btn-time"><span class="fa fa-clock-o"></span> <span class="xn-text">Time In</span></button></center>
+                </li>
                 <li class="xn-title">User Navigation</li>
                 <li>
                     <a href="index.html"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>                        
-                </li>
-                <li>
-                    <a href="index.html" class="mb-control btn-time"><span class="fa fa-clock-o"></span> <span class="xn-text">Time In</span></a>
                 </li>
                 <li>
                     <a href="page-profile.html"><span class="fa fa-user"></span> <span class="xn-text">View Profile</span></a>                        
@@ -97,12 +101,8 @@
                     <a href="view-req-vl.html"><span class="fa fa-book"></span> <span class="xn-text">View Leave Requests</span></a>
                 </li>
                 <li class="active">
-                    <a href="manage-emp.html"><span class="fa fa-users"></span> <span class="xn-text">Manage Employees</span></a>                        
+                    <a href="manage-emp.html"><span class="fa fa-users"></span> <span class="xn-text">Manage Employees</span></a>     
                 </li>                  
-                <div class="widget widget-danger widget-padding-sm" id="clock">
-                    <div class="widget-big-int plugin-clock">00:00</div>                            
-                    <div class="widget-subtitle plugin-date">Loading...</div>
-                </div>
             </ul>
 
             <!-- END X-NAVIGATION -->
@@ -153,7 +153,7 @@
                                     </div>
                                 </div>      
                             </div>  
-                            <div class="panel-body table-responsive">   
+                            <div class="panel-body table-responsive table-manage-emp">   
                                 <table class="table">
                                     <thead>
                                         <tr>
@@ -247,7 +247,7 @@
                 </div>
                 <div class="mb-footer">
                     <div class="pull-right">
-                        <a href="pages-login.html" class="btn btn-success btn-lg">Yes</a>
+                        <a href="login.html" class="btn btn-success btn-lg">Yes</a>
                         <button class="btn btn-default btn-lg mb-control-close">No</button>
                     </div>
                 </div>
@@ -288,13 +288,11 @@
             </div>
         </div>
     </div>
-    <div class="alert alert-success alert-message-timeout" role="alert">
-        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-        <center><strong>Well done!</strong> Time Out Successfu!</center>
+    <div id="close-alert1" class="alert alert-success alert-message-timeout" role="alert">
+        <center><strong>Well done!</strong> Time Out Successful!</center>
     </div>
-    <div class="alert alert-success alert-message-timein" role="alert">
-        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-        <center><strong>Well done!</strong> Time In Successful!</center>
+    <div id="close-alert2" class="alert alert-success alert-message-timein" role="alert">
+        <center><strong>Well done!</strong> Time In Successful!</center></a>
     </div>
 
     <!-- END MESSAGE BOX-->
