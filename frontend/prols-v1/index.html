@@ -50,16 +50,12 @@
                         </div>
                     </div>
                 </li>
-                <div class="widget widget-danger widget-padding-sm" id="clock">
-                    <div class="widget-big-int plugin-clock">00:00</div>
-                    <div class="widget-subtitle plugin-date">Loading...</div>
-                </div>
-                <li>
-                    <center><button type="button" href="index.html" class="btn btn-success btn-lg mb-control btn-time"><span class="fa fa-clock-o"></span> <span class="xn-text">Time In</span></button></center>
-                </li>
                 <li class="xn-title">User Navigation</li>
                 <li class="active">
                     <a href="index.html"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="index.html" class="mb-control btn-time"><span class="fa fa-clock-o"></span> <span class="xn-text">Time In</span></a>
                 </li>
                 <li>
                     <a href="page-profile.html"><span class="fa fa-user"></span> <span class="xn-text">View Profile</span></a>
@@ -103,6 +99,10 @@
                 <li>
                     <a href="manage-emp.html"><span class="fa fa-users"></span> <span class="xn-text">Manage Employees</span></a>
                 </li>
+                <div class="widget widget-danger widget-padding-sm" id="clock">
+                    <div class="widget-big-int plugin-clock">00:00</div>
+                    <div class="widget-subtitle plugin-date">Loading...</div>
+                </div>
             </ul>
 
             <!-- END X-NAVIGATION -->
@@ -166,7 +166,7 @@
                 </div>
                 <div class="mb-footer">
                     <div class="pull-right">
-                        <a href="login.html" class="btn btn-success btn-lg">Yes</a>
+                        <a href="pages-login.html" class="btn btn-success btn-lg">Yes</a>
                         <button class="btn btn-default btn-lg mb-control-close">No</button>
                     </div>
                 </div>
@@ -207,11 +207,13 @@
             </div>
         </div>
     </div>
-    <div id="close-alert1" class="alert alert-success alert-message-timeout" role="alert">
-        <center><strong>Well done!</strong> Time Out Successful!</center>
+    <div class="alert alert-success alert-message-timeout" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <center><strong>Well done!</strong> Time Out Successfu!</center>
     </div>
-    <div id="close-alert2" class="alert alert-success alert-message-timein" role="alert">
-        <center><strong>Well done!</strong> Time In Successful!</center></a>
+    <div class="alert alert-success alert-message-timein" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <center><strong>Well done!</strong> Time In Successful!</center>
     </div>
 
     <!-- END MESSAGE BOX-->
@@ -236,7 +238,6 @@
                                 Meeting at 2PM
                             </div>
                         </div>
-
                         <div class="item">
                             <div class="image"><img src="assets/images/users/user.jpg" alt="Dmitry Ivaniuk"/></div>                                
                             <div class="text">
@@ -250,35 +251,13 @@
                             <div class="image"></div>
                             <li class="list-group-item">National Heroes' Day</li>
                         </div>
-                        <div id="addTest" class="item">
-                            <div class="image"><img src="assets/images/users/user2.jpg" alt="John Doe"/></div>
-                            <div class="text">
-                                <div class="heading">
-                                    <strong>John Doe</strong><span class="date">08:33</span>
-                                </div>
-                                Test
-                            </div>
-                        </div>
-
                     </div>
-
                     <div class="form-group">
-
-                        <h3>Add Event</h3>  <span class="required">* required field!</span>
-                        <textarea class="form-control" rows="5" id="event"></textarea>
-                        <!-- <button type="button" class="btn btn-default" type= "submit">Add Event</button> -->
-                   <!--      <div id="addevent"><button class="btn-addevent"> Add Event </button></div> -->
-                        <!-- <div class="success-addevent"> <i class="fa fa-check-square"></i> </div> -->
-                       
-                    </div>
-
-                        <!-- <h3>Add Event</h3>
-                        <textarea class="form-control" rows="5" id="comment"></textarea> -->
-                        <div class="padding">
+                        <h3>Add Event</h3>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    <div class="padding">
                          <div class="btn-group bootstrap-select show-tick dropdown">
-                          <!-- <button type="button" class="btn btn-default" type= "submit">Add Event</button> -->
-                           <button type="button" class="btn dropdown-toggle btn-default"><span class="filter-option pull-right">Add Event</span></button>
-                            <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown"  aria-expanded="false">
+                             <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" title="Mustard, Ketchup, Relish" aria-expanded="false">
                                  <span class="filter-option pull-left">Tags</span>
                                  &nbsp;<span class="bs-caret">
                                  <span class="caret">
@@ -313,38 +292,33 @@
                              </ul>
                          </div>
                         </div>
-                       <!--   <button type="button" class="btn btn-default col-md-6 dropdown-alignments" type= "submit">Add Event</button> -->
+                         <button type="button" class="btn btn-default col-md-6 dropdown-alignments" type= "submit">Add Event</button>
                      </div>
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="heading5">
-                            <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <a data-toggle="collapse" href="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
                                 <h3>Request Vacation Leave &nbsp;<span id="down" class="glyphicon glyphicon-chevron-down align-glyph"></span></h3>
                             </a>
                         </div>
-                        <div class="collapse in" id="collapseExample" aria-expanded="false">
+                        <div class="collapse in" id="collapseExample" aria-expanded="true">
                             <div class="card card-block">
-                                <p>Start Date: </p>  <span class="required">* required field!</span>
-                                    <div id ="startDate" class="input-group date" data-provide="datepicker">
+                                <p>Start Date: </p>
+                                    <div class="input-group date" data-provide="datepicker">
                                         <input type="text" class="form-control">
                                         <div class="input-group-addon">
                                             <span class="glyphicon glyphicon-th"></span>
                                         </div>
                                     </div>
-
-
-                                <p>End Date:</p>  <span class="required">* required field!</span>
-                                    <div id = "endDate" class="input-group date" data-provide="datepicker">
+                                <p>End Date:</p>
+                                    <div class="input-group date" data-provide="datepicker">
                                         <input type="text" class="form-control">
                                         <div class="input-group-addon">
                                             <span class="glyphicon glyphicon-th"></span>
                                         </div>
                                     </div>
                                 <p>Reason: </p>
-                                <span class="required">* required field!</span>
-                                <textarea class="form-control" rows="5" id="reason"></textarea>
-                               <!--  <button type="button" class="btn btn-default" type= "submit">Send Request</button> -->
-                               <div id="sendreq"><button class="btn-sendreq"> Send Request </button></div>
-                                <div class="success-sendreq"> Request Sent <i class="fa fa-check-square"></i> </div>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                                <button type="button" class="btn btn-default" type= "submit">Send Request</button>
                             </div>
                         </div>
                     </div>
@@ -393,7 +367,6 @@
     <script type="text/javascript" src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/marcus-script.js"></script>
-    <script type="text/javascript" src="js/da.js"></script>
 
     <!-- END TEMPLATE -->
 
