@@ -259,14 +259,14 @@
                 <div class="modal-body">
                     <form>
                         <fieldset class="form-group">
-                            <label for="reason">Reason</label>
+                            <label for="reason">Reason:</label><div class="required"> * required field! </div>
                             <textarea class="form-control" rows="5" id="comment"></textarea>
                         </fieldset> 
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Send to Email</button>
+                    <button type="button" class="btn btn-default btn-edit-profile" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary btn-sendtoemail" id="sendtoemail">Send to Email</button>
                 </div>
             </div>
         </div>
@@ -393,12 +393,12 @@
     <div id="close-alert2" class="alert alert-success alert-message-timein" role="alert">
         <center><strong>Well done!</strong> Time In Successful!</center></a>
     </div>
-    <div class="alert alert-success alert-message-accept" role="alert">
-        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+    <div id="close-alert3" class="alert alert-success alert-message-accept" role="alert">
+        <button type="button" class="close" data-dismiss="alert"></button>
         <center><strong>Well done!</strong> Accept Request Successful!</center>
     </div>
-    <div class="alert alert-success alert-message-reject" role="alert">
-        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+    <div id="close-alert4" class="alert alert-success alert-message-reject" role="alert">
+        <button type="button" class="close" data-dismiss="alert"></button>
         <center><strong>Well done!</strong> Reject Request Successful!</center>
     </div>
 

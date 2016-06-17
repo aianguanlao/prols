@@ -12,6 +12,8 @@ body{
 	min-height: 0;
 }
 
+
+
 .x-navigation > li.xn-logo > a:first-child{
 	font-size: 0px;
 	text-indent: -9999px;
@@ -52,6 +54,10 @@ body{
 }
 .table tr:hover{
 	background: #e6e6e6 !important;
+}
+
+.mb-content{
+	font-size: 16px;
 }
 
 .page-sidebar{
@@ -112,19 +118,31 @@ body{
 .alert-message-accept{
 	position: absolute;
 	z-index: 9999;
-	top: 0;
+	top: -55px;
 	left: 0;
 	width: 100%;
 	opacity: 1;
+	cursor: pointer;
+
+	-webkit-transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+ 	-moz-transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+ 	-o- transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);;
+  	transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
 .alert-message-reject{
 	position: absolute;
 	z-index: 9999;
-	top: 0;
+	top: -55px;
 	left: 0;
 	width: 100%;
 	opacity: 1;
+	cursor: pointer;
+
+	-webkit-transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+ 	-moz-transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+ 	-o- transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);;
+  	transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
 /*#close-alert .alert-message-timein*/
@@ -270,6 +288,18 @@ body{
 .btn-edit-profile:hover{
 	background-color: #fe970a;
 	color: white;
+}
+
+.btn-sendtoemail{
+	color: white;
+	text-transform: uppercase;
+	background-color: #00BDDD;
+	border: none;
+}
+
+.btn-sendtoemail:hover{
+	background-color: #fe970a;
+
 }
 
 .btn-tags{

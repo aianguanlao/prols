@@ -1172,14 +1172,15 @@ body.page-container-boxed .page-container {
   width: 100%;
   background: #e8e8e8;
   margin-bottom: 10px;
-  padding: 6px 15px 7px;
+  padding: 16px 15px 7px;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
+  padding-bottom: 15px;
 }
 .breadcrumb li,
 .breadcrumb li a {
-  font-size: 11px;
+  font-size: 14px;
   line-height: 12px;
   color: #99a0aa;
   text-decoration: none;

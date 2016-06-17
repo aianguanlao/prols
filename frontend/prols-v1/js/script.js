@@ -30,7 +30,6 @@ $(document).ready(function(){
         $('.btn-time').removeClass('time-out').find('.xn-text').html('Time In');
     });
 
-
     $('.btn-edit-profile').click(function(e){
         e.preventDefault();
 
@@ -114,6 +113,16 @@ $(document).ready(function(){
 
     });
 
+     $('#close-alert4').click(function(){
+            $('#close-alert2').addClass('anim');
+            $('.alert-message-reject').css({'top' : '-55px'});
+    });
+
+    $('#close-alert3').click(function(){
+          $('.alert-message-accept').css({'top' : '-55px'});
+
+    });
+
 
     $('.btn-confirm-timeout').click(function(e){
         e.preventDefault();
@@ -140,15 +149,43 @@ $(document).ready(function(){
 
     $('.btn-confirm-accept').click(function(e){
         e.preventDefault();
-        $('.alert-message-accept').show();
+        $('.alert-message-accept').css({'top' : '0px'});
         $('#mb-accept').removeClass('open');
+        $('.alert-message-reject').css({'top' : '-55px'});
+
+        setTimeout(function(){
+            $('.alert-message-accept').css({'top' : '-55px'});
+         }, 5000);
     });
 
 
     $('.btn-confirm-reject').click(function(e){
         e.preventDefault();
-        $('.alert-message-reject').show();
+        // $('.alert-message-reject').css({'top' : '0px'});
         $('#mb-reject').removeClass('open');
+        $('.alert-message-accept').css({'top' : '-55px'});
+
+         // setTimeout(function(){
+         //    $('.alert-message-reject').css({'top' : '-55px'});
+         // }, 5000);
+    });
+
+    $("#sendtoemail").click(function(e){
+        e.preventDefault();
+
+         if(!$('.form-control').val() == ''){
+            $('.alert-message-reject').css({'top' : '0px'});
+            $('.required').css({'display' : 'none'});
+
+            setTimeout(function(){
+            $('.alert-message-reject').css({'top' : '-55px'});
+          }, 5000);
+
+        } else {
+            $('.required').css({'display' : 'block'});
+
+        }
+
     });
 
 
