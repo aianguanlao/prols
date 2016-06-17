@@ -1853,7 +1853,7 @@ ul.panel-controls > li > .dropdown-menu:before {
 .x-navigation li.active > .panel {
   display: block;
 }
-.x-navigation li > .panel:after {
+/*.x-navigation li > .panel:after {
   top: -11px;
   left: 20px;
   border: solid transparent;
@@ -1866,17 +1866,17 @@ ul.panel-controls > li > .dropdown-menu:before {
   border-bottom-color: #E5E5E5;
   border-width: 5px;
   margin-left: -5px;
-}
-.x-navigation li > .panel.xn-drop-left:after {
+}*/
+/*.x-navigation li > .panel.xn-drop-left:after {
   right: 20px;
   left: auto;
-}
+}*/
 .x-navigation li > .panel.dragged:after {
   display: none;
 }
-.x-navigation li > .panel.panel-primary:after {
+/*.x-navigation li > .panel.panel-primary:after {
   border-bottom-color: #33414e;
-}
+}*/
 .x-navigation li > .panel.panel-info:after {
   border-bottom-color: #3fbae4;
 }
